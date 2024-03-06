@@ -22,7 +22,13 @@ console.log(jsUser[mySym]);
 
 
 jsUser.email ="sanjay@yahoo.com";
-jsUser.name ="jay";
-Object.freeze(jsUser);
+// jsUser.name ="jay";
+// Object.freeze(jsUser);
 jsUser.email ="sanjay@microsoft.com";
 console.log(jsUser);
+
+jsUser.greeting = function(){
+    console.log(`hello js user , ${this.name}`);
+}
+
+console.log(jsUser.greeting());
