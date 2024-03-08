@@ -31,3 +31,16 @@ function handleUser(userInfo,salaryInfo){
 }
 
 handleUser(userInfo,salary);
+
+
+console.log(addOne(5));
+function addOne(num){
+    return num+2;
+}
+
+// addTwo(5); // will throw error , hoisting issue
+const addTwo = function(num){
+    return num+2;
+} 
+
+console.log(addTwo(3));
