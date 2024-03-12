@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom learning</title>
+    <style>
+      .bg{
+        background-color: #16171f;
+        color: whitesmoke;
+      }
+
+    
+    </style>
+  </head>
+  <body class="bg">
+   
+  </body>
+
+  <script>
+    const div = document.createElement('div'); 
+    console.log(div);
+    div.className ="main";
+    div.id = Math.round(Math.random()*10+1);
+    div.setAttribute("title","generated title");
+    // div.innerText ="DOM dom";
+    // or
+    const addText = document.createTextNode("DOM Learning");
+    div.appendChild(addText);
+
+    document.body.appendChild(div);
+  </script>
+</html>
