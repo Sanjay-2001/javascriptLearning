@@ -1,95 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bg Change</title>
     <style>
-        .container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          
-
-        }
-        ul{
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-            gap: 2rem;
-        }
-        ul>li{
-            list-style-type: none;
-            padding: 2rem;
-            color: white;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.753);
-            
-        }
-        ul>li:nth-child(1){
-            background-color: red;
-            border-radius: 1rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        ul>li:nth-child(2){
-            background-color: green;
-            border-radius: 1rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        ul>li:nth-child(3){
-            background-color: blue;
-            border-radius: 1rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        ul>li:nth-child(4){
-            background-color: yellow;
-            border-radius: 1rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: black;
-        }
-   </style>
-</head>
-<body>
-
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:3rem ;
+      }
+      ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      ul > li {
+        list-style-type: none;
+        padding: 2rem;
+        color: white;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.753);
+        cursor: pointer;
+      }
+      ul > li:hover {
+        transform: scale(0.9);
+      }
+      ul > li:nth-child(1) {
+        background-color: red;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      ul > li:nth-child(2) {
+        background-color: green;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      ul > li:nth-child(3) {
+        background-color: blue;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      ul > li:nth-child(4) {
+        background-color: yellow;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
-        <ul>
-            <li id="red" class="button">red</li>
-            <li id="green" class="button">green</li>
-            <li id="blue" class="button">blue</li>
-            <li id="yellow" class="button">yellow</li>
-        </ul>
+      <ul>
+        <li id="red" class="button">red</li>
+        <li id="green" class="button">green</li>
+        <li id="blue" class="button">blue</li>
+        <li id="yellow" class="button">yellow</li>
+      </ul>
     </div>
     <script>
-const buttons = document.querySelectorAll(".button");
-console.log(buttons);
-const bodys = document.querySelector("body");
-console.log(bodys);
+      const buttons = document.querySelectorAll(".button");
+      console.log(buttons);
+      const bodys = document.querySelector("body");
+      console.log(bodys);
 
-buttons.forEach(function(button){
-    console.log(button);
-    button.addEventListener('click',function (e){
-        console.log(e);
-        console.log(e.target);
-        console.log(e.target.id);
-        if(e.target.id ==="red"){
+      buttons.forEach(function (button) {
+        console.log(button);
+        button.addEventListener("click", function (e) {
+          console.log(e);
+          console.log(e.target);
+          console.log(e.target.id);
+          if (e.target.id === "red") {
             bodys.style.backgroundColor = e.target.id;
-        }
-        if(e.target.id ==="green"){
+          }
+          if (e.target.id === "green") {
             bodys.style.backgroundColor = e.target.id;
-        }
-        if(e.target.id ==="blue"){
+          }
+          if (e.target.id === "blue") {
             bodys.style.backgroundColor = e.target.id;
-        }
-        if(e.target.id ==="yellow"){
+          }
+          if (e.target.id === "yellow") {
             bodys.style.backgroundColor = e.target.id;
-        }
-    })
-})
-
-
+          }
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
