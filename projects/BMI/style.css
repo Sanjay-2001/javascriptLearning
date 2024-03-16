@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #1f1f1f;
-    color: #fff;
+    background-color: #1A1A2E;
+    color: #FFE6E6;
     padding: 20px;
 }
 
@@ -22,7 +22,7 @@ h1 {
 }
 
 form {
-    background-color: #333;
+    background-color:  #16213E;
     padding: 20px;
     border-radius: 10px;
 }
@@ -38,8 +38,8 @@ input[type="text"] {
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #555;
-    color: #fff;
+    background-color: #0F3460;
+    color: #FFE6E6;
 }
 
 .btn-container {
@@ -50,14 +50,14 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #008080;
-    color: #fff;
+    background-color: #E94560;
+    color: #FFE6E6;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #016161;
+    background-color: #cf2a46;
 }
 
 #result {
@@ -65,6 +65,7 @@ button:hover {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+    text-shadow: 1px 0px 1px rgba(21, 21, 21, 0.849);
 }
 
 #guide {
@@ -76,29 +77,25 @@ button:hover {
 }
 
 .underweight {
-    background-color: #ffcc00;
+    background-color: #e2f13b;
     padding: 0.2rem 0;
     border-radius: 0.3rem;
 }
 
 .normal {
-    background-color: #00cc66;
+    background-color: #81ea6c;
     padding: 0.2rem 0;
     border-radius: 0.3rem;
 }
 
 .overweight {
-    background-color: #ff5050;
+    background-color: #d13b3b;
     padding: 0.2rem 0;
     border-radius: 0.3rem;
-  }
+}
 
 @media (max-width: 768px) {
     .container {
         padding: 0 10px;
     }
 }
-
-
-
-  
