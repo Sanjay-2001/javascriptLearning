@@ -23,7 +23,10 @@ function User1(username,loginCount,isLoggedIn){
 const userOne = User1("Sanjay",12,true);
 const userTwo = User1("Dutta",11,false);
 console.log(userOne);
+console.log("-------------------------------------------------------------")
 
 const userThree = new User1("Sanjay",12,true);
 const userFour = new User1("Dutta",11,false);
 console.log(userThree);
+console.log("-------------------------------------------------------------")
+console.log(userThree.constructor);
